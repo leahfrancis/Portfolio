@@ -6,8 +6,8 @@ const HeroImg = () => {
   return (
     <div className="hero">
         <div className="mask">
-            <img className="bg-img" src="https://www.shutterstock.com/image-photo/blank-black-corporate-stationery-on-600nw-1051434977.jpg" alt="photo"></img>
-            </div>
+            <img className="bg-img" src="https://www.shutterstock.com/image-photo/blank-black-corporate-stationery-on-600nw-1051434977.jpg" alt="backgroundphoto" ></img>
+            </div> 
             <div className="content">
                 <p>Hi ! I'm Leah. </p>
                 <h1>Web Developer </h1>
