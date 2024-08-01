@@ -15,7 +15,7 @@ const WorkCard = () => {
         <h1 className='project-heading'>Projects</h1>
         <div className='project-container'>
             <div className='project-card'>
-                <img src={pro1} alt='img'/>
+                <img src={pro1} alt='photo'/>
                 <h2 className='project-title'>Let It Out-Mental Health Ease App</h2>
                 <div className='proj-details'>
                   <p>Android application. 
@@ -29,8 +29,8 @@ const WorkCard = () => {
                 </div>
             </div>
             <div className='project-card'>
-                <img src={pro3} alt='img'/>
-                <img src={pro4} alt='img'/>
+                <img src={pro3} alt='photo'/>
+                <img src={pro4} alt='photo'/>
                 <h2 className='project-title'>Smart Mosquito Species and Density Detection</h2>
                 <div className='proj-details'>
                   <p>IoT based system developed to lure and trap mosquitos and identify their species and density.
@@ -42,7 +42,7 @@ const WorkCard = () => {
                 </div>
             </div>
             <div className='project-card'>
-                <img src={pro2} alt='img'/>
+                <img src={pro2} alt='photo'/>
                 
                 <h2 className='project-title'>Bubble and Arrow App using JavaScript</h2>
                 <div className='proj-details'>
@@ -55,8 +55,8 @@ const WorkCard = () => {
                 </div>
             </div>
             <div className='project-card'>
-                <img src={pro5} alt='img'/>
-                <img src={pro6} alt='img'/>
+                <img src={pro5} alt='photo'/>
+                <img src={pro6} alt='photo'/>
                 
                 <h2 className='project-title'>Netflix Clone Website</h2>
                 <div className='proj-details'>
@@ -68,7 +68,7 @@ const WorkCard = () => {
                 </div>
             </div>
             <div className='project-card'>
-                <img src={pro7} alt='img'/>
+                <img src={pro7} alt='photo'/>
                
                 
                 <h2 className='project-title'>State Table for Product Sale.</h2>
@@ -81,7 +81,7 @@ const WorkCard = () => {
                 </div>
             </div>
             <div className='project-card'>
-                <img src={pro8} alt='img'/>
+                <img src={pro8} alt='photo'/>
                
                 
                 <h2 className='project-title'>E-Commerce Website</h2>
