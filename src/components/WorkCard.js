@@ -15,7 +15,7 @@ const WorkCard = () => {
         <h1 className='project-heading'>Projects</h1>
         <div className='project-container'>
             <div className='project-card'>
-                <img src={pro1} alt='let it out photo'/>
+                <img src={pro1} alt='let it out '/>
                 <h2 className='project-title'>Let It Out-Mental Health Ease App</h2>
                 <div className='proj-details'>
                   <p>Android application. 
@@ -29,8 +29,8 @@ const WorkCard = () => {
                 </div>
             </div>
             <div className='project-card'>
-                <img src={pro3} alt='mosquito photo'/>
-                <img src={pro4} alt='mosquito photo2'/>
+                <img src={pro3} alt='mosquito '/>
+                <img src={pro4} alt='mosquito2'/>
                 <h2 className='project-title'>Smart Mosquito Species and Density Detection</h2>
                 <div className='proj-details'>
                   <p>IoT based system developed to lure and trap mosquitos and identify their species and density.
