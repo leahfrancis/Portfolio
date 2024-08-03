@@ -1,0 +1,15 @@
+.success{
+    padding-top: 50px;
+    text-align: center;
+    background: white;
+    height: 100vh;
+  
+
+}
+p{
+    padding-top: 20px;
+    color: green;
+}
+h1{
+    color: green;
+}
