@@ -11,7 +11,8 @@ const Form = () => {
     try {
       await fetch('/', {
         method: 'POST',
-        body: data,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(data).toString(),
       });
       setSubmitted(true);
     } catch (error) {
@@ -27,8 +28,9 @@ const Form = () => {
           <p>We have received your message and will get back to you shortly.</p>
         </div>
       ) : (
-        <form name="contact" method="POST" onSubmit={handleSubmit} netlify>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
           <input type='hidden' name='form-name' value='contact' />
+          <input type='hidden' name='bot-field' />
           <label>Your Name:</label>
           <input type='text' name='fname' required />
           <label htmlFor='email'>Email:</label>
