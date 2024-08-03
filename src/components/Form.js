@@ -27,7 +27,7 @@ const Form = () => {
           <p>We have received your message and will get back to you shortly.</p>
         </div>
       ) : (
-        <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+        <form name="contact" method="POST" onSubmit={handleSubmit} netlify>
           <input type='hidden' name='form-name' value='contact' />
           <label>Your Name:</label>
           <input type='text' name='fname' required />
