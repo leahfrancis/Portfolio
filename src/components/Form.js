@@ -1,38 +1,27 @@
 import './Form.css';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 
 const Form = () => {
   const [submitted, setSubmitted] = useState(false);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const form = e.target;
-    const data = new FormData(form);
-    try {
-      await fetch('/', {
-        method: 'POST',
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(data).toString(),
-      });
-      setSubmitted(true);
-      navigate('/success'); // Redirect to success page
-    } catch (error) {
-      console.error('Form submission error:', error);
-    }
+    setSubmitted(true);
+    navigate('/success'); // Redirect to success page
   };
 
   return (
     <div className='form'>
       {submitted ? (
         <div>
-          {/* No content here */}
+          {/* Success message or content */}
+          <h2>Thank you for your submission!</h2>
         </div>
       ) : (
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+        <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
           <input type='hidden' name='form-name' value='contact' />
-          <input type='hidden' name='bot-field' />
           <label>Your Name:</label>
           <input type='text' name='fname' required />
           <label htmlFor='email'>Email:</label>
