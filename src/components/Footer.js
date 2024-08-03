@@ -29,9 +29,24 @@ const Footer = () => {
             <div className='right'>
                 <h4>About</h4>
                 <p>I am Leah Francis, a recent BTech IT graduate who is passionate about learning and building things. I look forward to discussing projects and interesting ideas.</p>
-           <div className='socials'>
-           <FaLinkedin size={30} style={{color:"#fff",marginRight:"1rem"}}/>
-           <FaGithub size={30} style={{color:"#fff",marginRight:"1rem"}}/></div>
+                <div className='socials'>
+            <a
+              href="https://www.linkedin.com/in/leah-francis-augustine"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin size={30} style={{ color: "#fff", marginRight: "1rem" }} />
+            </a>
+            <a
+              href="https://github.com/leahfrancis"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <FaGithub size={30} style={{ color: "#fff", marginRight: "1rem" }} />
+            </a>
+          </div>
            </div>
            
             
