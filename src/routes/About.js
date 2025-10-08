@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 const About = () => {
   return (
     <div><NavBar/>
-    <Heroimg2 heading="ABOUT." text="I am a front-end developer"/>
+    <Heroimg2 heading="ABOUT." text="I am a Software Engineer"/>
     <Aboutcontent />
       <Footer/>
       </div>

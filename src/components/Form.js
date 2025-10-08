@@ -9,14 +9,14 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
-    navigate('/success'); // Redirect to success page
+    navigate('/success'); 
   };
 
   return (
     <div className='form'>
       {submitted ? (
         <div>
-          {/* Success message or content */}
+          {}
           <h2>Thank you for your submission!</h2>
         </div>
       ) : (
